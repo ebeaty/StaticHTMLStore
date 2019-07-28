@@ -66,13 +66,16 @@ header {
     background: rgb(48, 253, 7) center 0px;
 }
 header h1 {
-    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-family: 'Lacquer', sans-serif;
     color: #000000;
-    font-size: 7.5em;
+    font-size: 10em;
     letter-spacing: -0.025em;
     margin: 0;    
 }
 header h2 {
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
     font-weight: 300;
     font-size: 3.8em;
     color: #494949;
@@ -89,6 +92,7 @@ nav {
     margin: 1.0em 0 ;
 }
 nav ul {
+    text-align: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -108,6 +112,88 @@ nav li a:hover {
 }
 
 /*Sidebar Section*/
-/*Main Section*/
-/*Footer*/
+section#sidebar {
+    width: 238px;
+    float: right;
+    position: relative;
+    display: block;
+    background-color: rgba(54, 50, 50, 0.5);
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border: rgb(48, 253, 7) solid 1px;
+    border-radius: 3%;
+    font-family: 'Julius Sans One', sans-serif;
+   }
 
+section#sidebar ul {
+    font-size: 200%
+}
+/*Main Section*/
+section #main {
+    background-color: rgba(54,50,50,0.5);
+    margin: 0 0 2.0em;
+    padding: 1.5em  0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 13px;
+    box-shadow: 1px 1px 5px #777;
+   }
+   section div.panel{
+    float: left;
+    position: relative;
+    width: 250px;
+    margin: 0 0.5em 2.0em 0.5em;
+    padding: 1.0em;
+    background-color: rgba(248, 244, 244, 0.5);
+    border: #ccc solid 1px;
+    border-radius: 0.6em;
+   }
+
+/*Footer*/
+footer {
+    background-color: transparent;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration:line-through;
+}
+/* Buttons*/
+button {
+    color: rgb(48,253,7);
+    background-color: #FFF;
+    display: inline-block;
+    margin: 0 0.75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 1px solid rgb(48,253,7);
+    border-radius: 10%;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: #000000;
+    border: 1px solid rgb(48, 253, 7);
+}
